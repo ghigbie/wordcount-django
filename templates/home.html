@@ -7,6 +7,15 @@
     <title>Django Word Count Project</title>
 </head>
 <body>
-    <h1>Word Count Home</h1>
+    <h1>{{ title }}</h1>
+    <form action="count">
+        <textarea name="fulltext" 
+                  id="fulltext" c
+                  ols="50" 
+                  rows="10"></textarea>
+        <br>
+        <input type="submit"
+               value="Count!" />  
+    </form>
 </body>
 </html>
