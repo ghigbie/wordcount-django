@@ -2,7 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def homepage(request):
-    return HttpResponse(request, 'home.html', {'title': 'Django Word Count'})
+    return render(request, 'home.html', {'title': 'Django Word Count App'})
 
-def countpage(request):
-    return HttpResponse(request, 'count.html', {'title': 'Count Page'})
+def count(request):
+    fulltext = request.GET['fulltext']
+    return render(request, 'count.html', {'fulltext': fulltext})
