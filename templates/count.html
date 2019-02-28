@@ -9,7 +9,7 @@
 <body>
     <h2>The word count is: {{ length }}</h2>
     <h2>Your text is: {{ fulltext }}</h2>
-    <a href="/"><button href="/">Count Again</button></a>
+    <a href="{% url 'home' %}"><button href="/">Count Again</button></a>
     <h2>These words appeared the most:</h2>
 
     <ul>
