@@ -11,10 +11,10 @@
     <h2>Your text is: {{ fulltext }}</h2>
     <p>{{ fulltext }}</p>
     <h2>These words appeared the most:</h2>
-    <pre>{{ worddictionary }}</pre>
+    <pre>{{ sortedwords }}</pre>
 
     <ul>
-        {% for word, counttotal in worddictionary %}
+        {% for word, counttotal in sortedwords %}
         <li>{{ word }} - count: {{ counttotal }}</li>
         {% endfor %}
     </ul>
