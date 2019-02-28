@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ fulltext }}</h1>
+    <h2>The word count is: {{ length }}</h2>
+    <h2>Your text is: {{ fulltext }}</h2>
+    <p>{{ fulltext }}</p>
+    <h2>These words appeared the most:</h2>
+    <pre>{{ worddictionary }}</pre>
+
+    <ul>
+        {% for word, counttotal in worddictionary %}
+        <li>{{ word }} - count: {{ counttotal }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
