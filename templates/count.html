@@ -9,9 +9,8 @@
 <body>
     <h2>The word count is: {{ length }}</h2>
     <h2>Your text is: {{ fulltext }}</h2>
-    <p>{{ fulltext }}</p>
+    <a href="/"><button href="/">Count Again</button></a>
     <h2>These words appeared the most:</h2>
-    <pre>{{ sortedwords }}</pre>
 
     <ul>
         {% for word, counttotal in sortedwords %}
